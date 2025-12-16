@@ -3,8 +3,8 @@
 // const myKm = parseInt(prompt("inserisci qui i chilometri"));
 // Chiedo all'utente l'età
 // const myAge = parseInt(prompt("inserisci qui l'età"));
-const myKm = parseInt(30);
-const myAge = parseInt(19);
+const myKm = parseInt(100);
+const myAge = parseInt(70);
 //     VALIDAZIONE IN NUMERI
 if (isNaN(myKm) || isNaN(myAge)) {
   alert("Required Real NUMBER");
@@ -12,18 +12,23 @@ if (isNaN(myKm) || isNaN(myAge)) {
 console.log("myKm", myKm);
 console.log("myAge", myAge);
 
+let outputPrice;
 // Calcolo il prezzo del tragitto in base ai km
 let myPrice = myKm * 0.21;
 console.log("costo al km", myPrice);
 //     SE sotto i 18 sconto 20%
 if (myAge < 18) {
-  alert("il prezzo è questo" + " = " + (myPrice * 20) / 100);
-} else {
-  alert("il prezzo è questo" + " = " + myPrice);
+  outputPrice = "il prezzo è questo" + " = " + (21 - (myPrice * 20) / 100);
 }
 //     ALTRIMENTI SE sopra i 65 sconto 40%
+else if (myAge > 65) {
+  outputPrice = "il prezzo è questo" + " = " + (21 - (myPrice * 40) / 100);
+}
 //     ALTRIMENTI prezzo completo
+else {
+  outputPrice = "il prezzo è questo" + " = " + myPrice;
+}
 
 //  Output prezzo in forma umana
-
+console.log(outputPrice);
 // ```
