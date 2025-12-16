@@ -1,10 +1,9 @@
 // ```
 // Chiedo all'utente numero di chilometri
-// const myKm = parseInt(prompt("inserisci qui i chilometri"));
+const myKm = parseInt(prompt("inserisci qui i chilometri"));
 // Chiedo all'utente l'età
-// const myAge = parseInt(prompt("inserisci qui l'età"));
-const myKm = parseInt(100);
-const myAge = parseInt(70);
+const myAge = parseInt(prompt("inserisci qui l'età"));
+
 //     VALIDAZIONE IN NUMERI
 if (isNaN(myKm) || isNaN(myAge)) {
   alert("Required Real NUMBER");
