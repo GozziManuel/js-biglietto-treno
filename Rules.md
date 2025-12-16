@@ -14,3 +14,17 @@ per controllare che la vostra logica sui prezzi funzioni correttamente, provate 
 
 100km, 10 anni => prezzo corretto: €16.80
 100km, 70 anni => prezzo corretto: €12.60
+
+```
+Chiedo all'utente numero di chilometri
+Chiedo all'utente l'età
+    VALIDAZIONE IN NUMERI
+
+Calcolo il prezzo del tragitto in base ai km
+    SE sotto i 18 sconto 20%
+    ALTRIMENTI SE sopra i 65 sconto 40%
+    ALTRIMENTI prezzo completo
+
+ Output prezzo in forma umana
+
+```
