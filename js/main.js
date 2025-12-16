@@ -30,4 +30,5 @@ else {
 
 //  Output prezzo in forma umana
 console.log(outputPrice);
+alert(outputPrice);
 // ```
